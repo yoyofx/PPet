@@ -162,6 +162,7 @@ const initTray = (mainWindow: BrowserWindow) => {
               preload: join(__dirname, '../preload/index.cjs'),
               webSecurity: false,
               backgroundThrottling: false,
+              nodeIntegration: true,
             },
           },
           '/setting',

@@ -1,6 +1,8 @@
 import { createModel } from '@rematch/core'
 import { RootModel } from '.'
 
+console.log(window)
+console.log(window.bridge)
 const config = window.bridge.getConfig() || {}
 
 export const win = createModel<RootModel>()({

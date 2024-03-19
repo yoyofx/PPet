@@ -57,12 +57,6 @@ const Toolbar: FC<{
       .then((response) => response.json())
       .then((result) => {
         showMessage(result.hitokoto, 6000, 10)
-
-        const text = `这句一言来自 <span>「${result.from}」</span>，是 <span>${result.creator}</span> 在 hitokoto.cn 投稿的。`
-
-        window.setTimeout(() => {
-          showMessage(text, 6000, 10)
-        }, 6000)
       })
   }
   const loadOtherModel = () => {

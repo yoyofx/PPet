@@ -58,7 +58,7 @@ const Model = () => {
 
   const modelPath =
     useGhProxy && originModelPath.startsWith('http')
-      ? `https://ghproxy.com/${originModelPath}`
+      ? `https://mirror.ghproxy.com/${originModelPath}`
       : originModelPath
 
   const dispatch = useDispatch<Dispatch>()
